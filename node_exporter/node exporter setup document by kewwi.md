@@ -38,7 +38,7 @@ node_exporter --help
 sudo vim /etc/systemd/system/node_exporter.service
 ```
 **step 9 :Paste below code to node_exporter.service file**
-```service
+```yaml
 [Unit]
 Description=Node Exporter
 Wants=network-online.target
