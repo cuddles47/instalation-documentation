@@ -1,5 +1,23 @@
 # node exporter setup document by kewwi 
 
+Cấu hình máy chủ
+================
+
+Phần mềm được cài đặt trên máy chủ có:
+
+-   Hệ điều hành: Ubuntu 20.04 server
+
+-   CPU: 2 core (Khuyến nghị 4 core)
+
+-   RAM: 8GB  (Khuyến nghị 8GB)
+
+-   Bộ nhớ: 50GB (Khuyến nghị 100GB)
+
+-   Cho phép truy cập SSH từ xa.
+
+Bắt đầu
+=======
+
 **step 1 : create a system user for Node Exporter**
 ```sh
 sudo useradd \
