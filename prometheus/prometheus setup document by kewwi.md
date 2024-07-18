@@ -2,9 +2,9 @@
 
 ## Mục lục
 
-- [Hướng dẫn cài đặt Prometheus trên Ubuntu Server 20.04](#hướng-dẫn-cài-đặt-prometheus-trên-ubuntu-server-20.04)
-  - [Mục lục](#mục-lục)
-  - [Bước 1 : Tạo một người dùng Linux chuyên dụng hay còn được gọi là tài khoản hệ thống cho Prometheus](#Bước-1-Tạo-một-người-dùng-linux-chuyên-dụng-hay-còn-được-gọi-là-tài-khoản-hệ-thống-cho-prometheus)
+- [Hướng dẫn cài đặt Prometheus trên Ubuntu Server 20.04](#hướng-dẫn-cài-đặt-prometheus-trên-ubuntu-server-2004)
+  - [Mục lục](#mục-lục)  
+  - [Bước 1 : Tạo một người dùng Linux chuyên dụng hay còn được gọi là tài khoản hệ thống cho Prometheus](#bước-1--tạo-một-người-dùng-linux-chuyên-dụng-hay-còn-được-gọi-là-tài-khoản-hệ-thống-cho-prometheus)
   - [Bước 2 : Tải xuống Prometheus bằng curl hoặc wget](#bước-2--tải-xuống-prometheus-bằng-curl-hoặc-wget)
   - [Bước 3 : Giải nén và di chuyển các file Prometheus từ kho lưu trữ](#bước-3--giải-nén-và-di-chuyển-các-file-prometheus-từ-kho-lưu-trữ)
   - [Bước 4 : Dọn dẹp và thu hồi tài nguyên](#bước-4--dọn-dẹp-và-thu-hồi-tài-nguyên)
@@ -30,7 +30,7 @@ Phần mềm được cài đặt trên máy chủ có:
 Bắt đầu
 =======
 
-**Bước 1 : Tạo một người dùng Linux chuyên dụng hay còn được gọi là tài khoản hệ thống cho Prometheus.**
+## Bước 1 : Tạo một người dùng Linux chuyên dụng hay còn được gọi là tài khoản hệ thống cho Prometheus.
 Việc có người dùng riêng cho từng dịch vụ phục vụ hai mục đích chính :
 - giảm tác động trong trường hợp xảy ra sự cố với dịch vụ
 - đơn giản hóa việc quản lý và cấp quyền\
@@ -43,14 +43,14 @@ sudo useradd \
 ```
 ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXcYs5A4TRpH7fUv-aRH7YNJRKjTEWvlXaDEskcfoPUVLj3jrzF_Ca8JENE1bAAorKPl5INsVzOevvnfNZYdklcVIM3qPk9jdrkp8VdH3gx_02Gh-Dlktjcg91I9UAB9BblqlIxmqungBJdG54B9iLF-lNdK?key=GNGwM7x8FcjuZoSehwKGXg)
 
-**Bước 2 : Tải xuống prometheus bằng curl hoặc wget**
+## Bước 2 : Tải xuống prometheus bằng curl hoặc wget
 
 ```sh
 wget [https://github.com/prometheus/prometheus/releases/download/v2.32.1/prometheus-2.32.1.linux-amd64.tar.gz](https://github.com/prometheus/prometheus/releases/download/v2.32.1/prometheus-2.32.1.linux-amd64.tar.gz)
 ```
 chọn phiên bản [tại đây](https://prometheus.io/download/)![](https://lh7-us.googleusercontent.com/docsz/AD_4nXcY-rqYr_99aXEmyxpsRG6pO_IrrPwc0k-bMR2iq4vGxplTAdXdbcLdhfyn7uPuzGXgtIsJatTOSxmmRxD_0VH3dXo7e6MB3-KbQoIL6ChKXSG2Pi8KL2d_WOc7lBKemJHpvhk7ILbKMy38N7m_u8yp7JMt?key=GNGwM7x8FcjuZoSehwKGXg)
 
-**Bước 3 : Giải nén và di chuyển các file prometheus từ kho lưu trữ**
+## Bước 3 : Giải nén và di chuyển các file prometheus từ kho lưu trữ
 ```sh
 tar -xvf prometheus-2.32.1.linux-amd64.tar.gz\
 sudo mkdir -p /data /etc/prometheus\
@@ -61,19 +61,19 @@ sudo mv prometheus.yml /etc/prometheus/prometheus.yml\
 ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXeU8D1hTsP6G5Ix4KRC4pH2KqxLIyydrOGv27Bu8NFB6Odl9fhKoxdv1CFeJdKarlsLxCe2jbBSG1SJxY0M6_Epnapl6b5n76zwAjqW6jgp5siaIx8tkyc9-32R8JIT_CRb7nuLNkiOoULzwtFLlkG5OSUx?key=GNGwM7x8FcjuZoSehwKGXg)\
 ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXf0Kw7LTmsKdWwYseHQfIUNQiLyfuR2Ba3FypAh6vbNMdIDpSY8CRFSVen9bwdNinfN8L-7EEYl0XUp1cnzT8RKd5yvWaoqSNpBbAdqM0GqhIDfKMXqq1wtySIwOOfE7QckKVX13uCZYAqRyXtSddLb1VM?key=GNGwM7x8FcjuZoSehwKGXg)
 
-**Bước 4 : Dọn dẹp và thu hồi tài nguyên**
+## Bước 4 : Dọn dẹp và thu hồi tài nguyên
 ```sh
 cd\
 rm -rf prometheus*
 ```
 
-**Bước 5 : Xác minh rằng bạn có thể thực thi tệp nhị phân prometheus bằng cách chạy lệnh sau**
+## Bước 5 : Xác minh rằng bạn có thể thực thi tệp nhị phân prometheus 
 ```sh
 prometheus --version
 ```
 ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXebIQ4TrIKiqIj5U-fhfR2rpnIdx7Nu9GQwGQFkiudfjzJFNFBtxsK1jBj8sRkR4-KiHetBOrr1FBN6HxUZEbuRZWCDEiSxE-H3edkPUeomcujNDbS70mbcXflPcBDBCuu4MCnNUp-2ifXOUdpBBr5e2Y2f?key=GNGwM7x8FcjuZoSehwKGXg)
 
-**Bước 6 : Điều chỉnh file prometheus.service**
+## Bước 6 : Điều chỉnh file prometheus.service
 ```sh
 sudo vim /etc/systemd/system/prometheus.service
 ```
@@ -123,7 +123,7 @@ WantedBy=multi-user.target\
 ```
 ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXdj1KBgKHiGxuVUtM1z5gbVdWJktpFyrdD_Z1yxbRp9HJUgplI9BJNWVYe2qRKrvHOLJizA1SXC5qX_psan-GZncXOCtT0ucqkmuZQ3WH847vKLnAnsVISJ7Tu0AXMe6VslV7bEqoViPZn6BO1f2Ps1ELc-?key=GNGwM7x8FcjuZoSehwKGXg)
 
-**Bước 7 : Khởi động prometheus**
+## Bước 7 : Khởi động prometheus 
 Để tự động khởi động Prometheus sau khi khởi động lại, hãy chạy enable.
 ```sh
 sudo systemctl enable prometheus
