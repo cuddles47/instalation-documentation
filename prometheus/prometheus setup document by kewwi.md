@@ -4,7 +4,13 @@
 
 - [Hướng dẫn cài đặt Prometheus trên Ubuntu Server 20.04](#hướng-dẫn-cài-đặt-prometheus-trên-ubuntu-server-20.04)
   - [Mục lục](#mục-lục)
-  - [1. Tạo linux](#Tạo-một-người-dùng-Linux-chuyên-dụng-hay-còn-được-gọi-là-tài-khoản-hệ-thống-cho-Prometheus)
+  - [Bước 1 : Tạo một người dùng Linux chuyên dụng hay còn được gọi là tài khoản hệ thống cho Prometheus](#Bước-1-Tạo-một-người-dùng-linux-chuyên-dụng-hay-còn-được-gọi-là-tài-khoản-hệ-thống-cho-prometheus)
+  - [Bước 2 : Tải xuống Prometheus bằng curl hoặc wget](#bước-2--tải-xuống-prometheus-bằng-curl-hoặc-wget)
+  - [Bước 3 : Giải nén và di chuyển các file Prometheus từ kho lưu trữ](#bước-3--giải-nén-và-di-chuyển-các-file-prometheus-từ-kho-lưu-trữ)
+  - [Bước 4 : Dọn dẹp và thu hồi tài nguyên](#bước-4--dọn-dẹp-và-thu-hồi-tài-nguyên)
+  - [Bước 5 : Xác minh rằng bạn có thể thực thi tệp nhị phân Prometheus](#bước-5--xác-minh-rằng-bạn-có-thể-thực-thi-tệp-nhị-phân-prometheus)
+  - [Bước 6 : Điều chỉnh file prometheus.service](#bước-6--điều-chỉnh-file-prometheusservice)
+  - [Bước 7 : Khởi động Prometheus](#bước-7--khởi-động-prometheus)
 
 Cấu hình máy chủ
 ================
@@ -24,8 +30,8 @@ Phần mềm được cài đặt trên máy chủ có:
 Bắt đầu
 =======
 
-**Bước 1 : Tạo một người dùng Linux chuyên dụng hay còn được gọi là tài khoản hệ thống cho Prometheus. 
-Việc có người dùng riêng cho từng dịch vụ phục vụ hai mục đích chính :**
+**Bước 1 : Tạo một người dùng Linux chuyên dụng hay còn được gọi là tài khoản hệ thống cho Prometheus.**
+Việc có người dùng riêng cho từng dịch vụ phục vụ hai mục đích chính :
 - giảm tác động trong trường hợp xảy ra sự cố với dịch vụ
 - đơn giản hóa việc quản lý và cấp quyền\
 chạy lệnh sau để tạo người dùng hệ thống :
