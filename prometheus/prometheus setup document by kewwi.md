@@ -1,5 +1,11 @@
 # prometheus setup document by kewwi 
 
+## Mục lục
+
+- [Hướng dẫn cài đặt Prometheus trên Ubuntu Server 20.04](#hướng-dẫn-cài-đặt-prometheus-trên-ubuntu-server-20.04)
+  - [Mục lục](#mục-lục)
+  - [1. Tạo linux](#Tạo-một-người-dùng-Linux-chuyên-dụng-hay-còn-được-gọi-là-tài-khoản-hệ-thống-cho-Prometheus)
+
 Cấu hình máy chủ
 ================
 
@@ -18,7 +24,8 @@ Phần mềm được cài đặt trên máy chủ có:
 Bắt đầu
 =======
 
-**Bước 1 : Tạo một người dùng Linux chuyên dụng hay còn được gọi là tài khoản hệ thống cho Prometheus. Việc có người dùng riêng cho từng dịch vụ phục vụ hai mục đích chính :**
+**Bước 1 : Tạo một người dùng Linux chuyên dụng hay còn được gọi là tài khoản hệ thống cho Prometheus. 
+Việc có người dùng riêng cho từng dịch vụ phục vụ hai mục đích chính :**
 - giảm tác động trong trường hợp xảy ra sự cố với dịch vụ
 - đơn giản hóa việc quản lý và cấp quyền\
 chạy lệnh sau để tạo người dùng hệ thống :
