@@ -5,8 +5,8 @@
 - [node exporter setup document by kewwi](#node-exporter-setup-document-by-kewwi)
   - [Mục lục](#mục-lục)
   - [Cấu hình máy chủ](#cấu-hình-máy-chủ)
-  - [step 1 : create a system user for Node Exporter](#step-1--create-a-system-user-for-node-exporter)
-  - [step 2 : Use wget command to download binary(get other version here)](#step-2--use-wget-command-to-download-binaryget-other-version-here)
+  - [step 1 : Create a system user for Node Exporter](#step-1--Create-a-system-user-for-node-exporter)
+  - [step 2 : Download](#step-2--Download)
   - [step 3 : Extract node exporter from the archive](#step-3--extract-node-exporter-from-the-archive)
   - [step 4 : Move binary to the /usr/local/bin](#step-4--move-binary-to-the-usrlocalbin)
   - [step 6 : Verify that you can run the binary](#step-6--verify-that-you-can-run-the-binary)
@@ -37,7 +37,7 @@ Bắt đầu
 
 ================
 
-## step 1 : create a system user for Node Exporter
+## step 1 : Create a system user for Node Exporter
 
 ```sh
 
@@ -51,7 +51,7 @@ sudo useradd
 
 ```
 
-## step 2 : download 
+## step 2 : Download 
 Use wget command to download binary (get other version [here](https://prometheus.io/download/))
 
 ```sh
