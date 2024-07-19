@@ -51,7 +51,8 @@ sudo useradd
 
 ```
 
-## step 2 : Use wget command to download binary**(get other version [here](https://prometheus.io/download/))
+## step 2 : download 
+Use wget command to download binary (get other version [here](https://prometheus.io/download/))
 
 ```sh
 
