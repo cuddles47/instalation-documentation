@@ -1,12 +1,13 @@
-# prometheus intergrate grafana document  
+# grafana instructions for use
 
 ## Mục lục
 
-- [prometheus intergrate grafana document](#prometheus-intergrate-grafana-document)
+- [grafana instructions for use](#grafana-instructions-for-use)
   - [Mục lục](#mục-lục)
   - [Cấu hình máy chủ](#cấu-hình-máy-chủ)
-- [Bước 1 : Add data source](#bước-1--add-data-source)
-- [Bước 2 : Khởi động lại dịch vụ để load config](#bước-2--khởi-động-lại-dịch-vụ-để-load-config)
+  - [bước 1 : Đăng nhập vào grafana](#bước-1--đăng-nhập-vào-grafana)
+  - [bước 2 : Chọn dashboards](#bước-2--chọn-dashboards)
+  - [bước 3 : chọn job/node cần xem](#bước-3--chọn-jobnode-cần-xem)
 
 
 ## Cấu hình máy chủ
@@ -14,39 +15,27 @@
 
 Phần mềm được cài đặt trên máy chủ có:
 
--   Hệ điều hành: Ubuntu 20.04 server
+- Hệ điều hành: Ubuntu 20.04 server
 
--   CPU: 2 core (Khuyến nghị 4 core)
+- CPU: 2 core (Khuyến nghị 4 core)
 
--   RAM: 8GB   (Khuyến nghị 8GB)
+- RAM: 8GB  (Khuyến nghị 8GB)
 
--   Bộ nhớ: 50GB  (Khuyến nghị  100GB)
+- Bộ nhớ: 50GB (Khuyến nghị 100GB)
 
--   Cho phép truy cập SSH từ xa.
+- Cho phép truy cập SSH từ xa.
+
+Bắt đầu
 
 ================
-# Bước 1 : Add data source
-Để trực quan hóa số liệu, trước tiên bạn cần thêm nguồn dữ liệu. Nhấp Add data source và chọn Prometheus. Đối với URL, hãy nhập <http://localhost:9090>  và nhấp vào Save and test. Bạn có thể thấy Data source is working
 
-1 cách làm khác là add data source dưới dạng mã
-```sh
-sudo vim /etc/grafana/provisioning/datasources/datasources.yaml
-```
-datasources.yaml scripts:
-```yaml
-apiVersion: 1
+## bước 1 : Đăng nhập vào grafana
+truy cập grafana qua < ip>:3000 và nhập user & password
 
-datasources:
+## bước 2 : Chọn dashboards
+vào dashboard và chọn node exporter full, nếu chưa tạo dashboard thì quay lại hướng dẫn tích hợp grafana và prometheus [tại đây](https://github.com/cuddles47/instalation-documentation-/blob/main/grafana/prometheus-intergrate-grafana.md)
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXdJqAYyY2gk8rC7x3SUgaJ6ZKQFinV2DnfD8_HNCQuO_GtABkxccocufDHkP6OpWwVDqm526NPRsAIPrvQQJFQGEJXud7SrPeCa3Z4Mc5XZHqDRHk8sCyFcMQ9i_r-pfVfHS2-SvRERx7JO_AbMRGe1qrY?key=nwNavL48G3n2fL_d6mH3Wg)
 
-   - name: Prometheus
-     type: prometheus
-     url: http://localhost:9090
-     isDefault: true
-```
-![](https://lh7-us.googleusercontent.com/docsz/AD_4nXd7T7OK8BQlTdEgHcTjK82V6OBOnP15tW7oQxJSvgENF12qI1a6gwrbice6vALA5WOIn9ujSd_uDXSMbBJ5JXBHyvFS9l2naUrMERjNM-UiKJ6Lb2MuWDpRVvRSWuww-7Jv2H9mhp4TarHNKF2cwOKZbTJE?key=KlWMgODr0HM5OGs9sD0aNg)
-
-# Bước 2 : Khởi động lại dịch vụ để load config
-chạy lệnh sau 
-```sh
-sudo systemctl restart grafana-server
-```
+## bước 3 : chọn job/node cần xem 
+chọn thanh job ở hàng trên cùng 
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXdLrtEAYSS2dL6NCb_zGLSGg8u9ad9VGQHjh_KecXQayCIIfVbGjDKILsNf5fFiws3_ZWax0iTvBdPXeFgHjjWQmMEj3cj2vLbLl7ETLXNDqLuNQtLn1rVcrvwP_phKRZWv-CeVYBrejcGF0G0CI0MszuhW?key=nwNavL48G3n2fL_d6mH3Wg)
