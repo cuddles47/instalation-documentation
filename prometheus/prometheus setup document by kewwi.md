@@ -1,4 +1,4 @@
-# prometheus setup document by kewwi 
+# prometheus setup document
 
 ## Mục lục
 
