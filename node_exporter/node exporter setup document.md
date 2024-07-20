@@ -1,12 +1,12 @@
 # node exporter setup document by kewwi
 
-## Mục lục
+# Mục lục
 
 - [node exporter setup document by kewwi](#node-exporter-setup-document-by-kewwi)
   - [Mục lục](#mục-lục)
   - [Cấu hình máy chủ](#cấu-hình-máy-chủ)
-  - [step 1 : Create a system user for Node Exporter](#step-1--Create-a-system-user-for-node-exporter)
-  - [step 2 : Download](#step-2--Download)
+  - [step 1 : Create a system user for Node Exporter](#step-1--create-a-system-user-for-node-exporter)
+  - [step 2 : Download](#step-2--download)
   - [step 3 : Extract node exporter from the archive](#step-3--extract-node-exporter-from-the-archive)
   - [step 4 : Move binary to the /usr/local/bin](#step-4--move-binary-to-the-usrlocalbin)
   - [step 6 : Verify that you can run the binary](#step-6--verify-that-you-can-run-the-binary)
@@ -17,7 +17,7 @@
   - [step 11 : Start the Node Exporter](#step-11--start-the-node-exporter)
   - [step 12 : Check the status of Node Exporter with the following command](#step-12--check-the-status-of-node-exporter-with-the-following-command)
 
-## Cấu hình máy chủ
+# Cấu hình máy chủ
 
 ================
 
@@ -33,7 +33,7 @@ Phần mềm được cài đặt trên máy chủ có:
 
 - Cho phép truy cập SSH từ xa.
 
-Bắt đầu
+# Bắt đầu
 
 ================
 
