@@ -1,4 +1,4 @@
-# Standard software architectures 
+# Standard architectures 
 
 ---
 
