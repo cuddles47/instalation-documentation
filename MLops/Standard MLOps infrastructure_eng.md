@@ -1,6 +1,16 @@
 # Standard MLOps infrastructure
 A standard MLOps infrastructure typically consists of various components and layers that ensure smooth and efficient collaboration between data scientists, machine learning (ML) engineers, and DevOps teams. Below is a structured presentation of the standard infrastructure components for MLOps:
 
+### Summary of Standard MLOps Infrastructure:
+1. **Data Layer**: Ingestion, transformation, storage.
+2. **Development Environment**: Collaboration and experimentation (JupyterHub, IDEs).
+3. **Training and Optimization**: Training infrastructure, hyperparameter tuning.
+4. **Model Management**: Registry and version control.
+5. **Deployment**: Scalable model serving (Kubernetes, Seldon).
+6. **CI/CD**: Automating the model lifecycle from integration to deployment.
+7. **Monitoring**: Continuous monitoring and alerting for performance and drift.
+8. **Governance**: Ensuring compliance, traceability, and security throughout the lifecycle.
+
 ### 1. **Data Ingestion Layer**
    - **Purpose**: Collect and aggregate data from different sources for ML model training.
    - **Components**:
@@ -111,15 +121,6 @@ A standard MLOps infrastructure typically consists of various components and lay
      - Secure model training and inference environments.
      - Data privacy and encryption throughout the pipeline.
      - Role-based access for sensitive data and models.
-
-### Summary of Standard MLOps Infrastructure:
-1. **Data Layer**: Ingestion, transformation, storage.
-2. **Development Environment**: Collaboration and experimentation (JupyterHub, IDEs).
-3. **Training and Optimization**: Training infrastructure, hyperparameter tuning.
-4. **Model Management**: Registry and version control.
-5. **Deployment**: Scalable model serving (Kubernetes, Seldon).
-6. **CI/CD**: Automating the model lifecycle from integration to deployment.
-7. **Monitoring**: Continuous monitoring and alerting for performance and drift.
-8. **Governance**: Ensuring compliance, traceability, and security throughout the lifecycle.
+       
 
 This infrastructure supports scalability, automation, and collaboration, while maintaining high-quality standards for model development and deployment.
