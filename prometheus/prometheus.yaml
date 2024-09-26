@@ -1,0 +1,70 @@
+# my global config
+global:
+  scrape_interval: 15s # Set the scrape interval to every 15 seconds. Default is every 1 minute.
+  evaluation_interval: 15s # Evaluate rules every 15 seconds. The default is every 1 minute.
+  # scrape_timeout is set to the global default (10s).
+# Alertmanager configuration
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+          - localhost:9093
+# Load rules once and periodically evaluate them according to the global 'evaluation_interval'.
+rule_files:
+  # - "first_rules.yml"
+  # - "second_rules.yml"
+    - dead-mans-snitch-rule.yml
+    - batch-job-rules.yml
+    - all-targetmissing.yml
+    - host-high-cpu-load.yml
+    - host-memory-under-memory-pressure.yml
+    - host-out-of-memory.yml
+    - job-missing.yml
+    - target-missing.yml
+# A scrape configuration containing exactly one endpoint to scrape:
+# Here it's Prometheus itself.
+scrape_configs:
+  # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
+  - job_name: "prometheus"
+    basic_auth:
+      username: 
+      password: 
+    static_configs:
+      - targets: ["localhost:9090"]
+  - job_name: ""
+    static_configs:
+      - targets: [""]
+  - job_name: "node_121_exporter(freeradius)"
+    static_configs:
+      - targets: [""]
+  - job_name: "node_131_exporter(master)"
+    static_configs:
+      - targets: [""]
+  - job_name: "node_132_exporter(worker1)"
+    static_configs:
+      - targets: [""]
+  - job_name: "node_133_exporter(gitlab)"
+    static_configs:
+      - targets: [""]
+  - job_name: "node_141_exporter(prografana)"
+    static_configs:
+      - targets: [""]
+  - job_name: "node_142_exporter(worker2)"
+    static_configs:
+      - targets: [""]
+  - job_name: "node_11_exporter"
+    static_configs:
+      - targets: [""]
+  - job_name: "node_12_exporter"
+    static_configs:
+      - targets: [""]
+  - job_name: "node_13_exporter"
+    static_configs:
+      - targets: [""]
+  - job_name: "node_14_exporter"
+    static_configs:
+      - targets: [""]
+  - job_name: "pushgateway"
+    honor_labels: true
+    static_configs:
+      - targets: [""]
