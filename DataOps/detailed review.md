@@ -8,7 +8,7 @@ Phân tích ưu nhược điểm, đưa ra các use case.
 - **Kiểm soát dữ liệu tốt**: Cho phép theo dõi và điều chỉnh luồng dữ liệu trong thời gian thực.
 
 #### **Nhược điểm:**
-- **Hiệu suất có thể không tối ưu cho xử lý real-time**: Có thể không xử lý nhanh như Kafka trong tình huống cần throughput cao.
+- **Hiệu suất có thể không tối ưu cho xử lý real-time**: Có thể không xử lý nhanh như Kafka trong tình huống cần xử lý với thông lượng cao.
 - **Cấu hình phức tạp**: Đối với các luồng dữ liệu phức tạp, cấu hình có thể trở nên khó khăn.
 
 #### **Use Case:**
