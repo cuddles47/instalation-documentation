@@ -16,7 +16,7 @@
 - [14. Tính năng hỗ trợ và dịch vụ khách hàng](#14-tính-năng-hỗ-trợ-và-dịch-vụ-khách-hàng)
 ## 1. **Khả năng tích hợp**
    - **Hỗ trợ nguồn dữ liệu**: Công cụ có hỗ trợ nhiều loại nguồn dữ liệu không? Ví dụ: cơ sở dữ liệu quan hệ, NoSQL, API, tập tin, dịch vụ đám mây, và hệ thống IoT.
-   - **Khả năng kết nối**: Công cụ có sẵn các connector tích hợp để kết nối với những hệ thống và nền tảng phổ biến không, như AWS, Azure, Google Cloud, Kafka, các công cụ ETL local v.v.?
+   - **Khả năng kết nối**: Công cụ có sẵn các connector tích hợp để kết nối với những hệ thống và nền tảng phổ biến không, như Kafka, các công cụ ETL local v.v.?
    - **Khả năng mở rộng connector**: Công cụ có cho phép dễ dàng phát triển các connector tùy chỉnh để kết nối với các nguồn dữ liệu không được hỗ trợ sẵn không?
 
 ## 2. **Khả năng xử lý dữ liệu**
@@ -89,4 +89,4 @@
 -   **Community and Forums**: Ngoài dịch vụ hỗ trợ chính thức, công cụ có cộng đồng người dùng đông đảo và các diễn đàn trao đổi thông tin để hỗ trợ kỹ thuật không?
 
 Khi đánh giá, có thể cân nhắc thêm các yếu tố này dựa trên nhu cầu cụ thể và mục tiêu dài hạn của tổ chức. Những tiêu chí này giúp bạn có cái nhìn toàn diện hơn và đưa ra quyết định tốt hơn về công cụ data ingestion phù hợp nhất cho tổ chức của mình.
-### Cân nhắc:  Apache NiFi, Kafka, Talend
+### Cân nhắc:  Apache NiFi, Kafka, Talend, Hadoop
