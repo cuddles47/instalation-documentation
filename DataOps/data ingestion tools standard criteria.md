@@ -88,5 +88,5 @@
 -   **Documentation**: Công cụ có cung cấp tài liệu hướng dẫn chi tiết và ví dụ thực tế để người dùng dễ dàng nắm bắt không?
 -   **Community and Forums**: Ngoài dịch vụ hỗ trợ chính thức, công cụ có cộng đồng người dùng đông đảo và các diễn đàn trao đổi thông tin để hỗ trợ kỹ thuật không?
 
-Khi đánh giá, có thể cân nhắc thêm các yếu tố này dựa trên nhu cầu cụ thể và mục tiêu dài hạn của tổ chức. Những tiêu chí này giúp bạn có cái nhìn toàn diện hơn và đưa ra quyết định tốt hơn về công cụ data ingestion phù hợp nhất cho tổ chức của mình.
-### Cân nhắc:  Apache NiFi, Kafka, Talend, Hadoop
+Khi đánh giá, có thể cân nhắc thêm các yếu tố này dựa trên nhu cầu cụ thể và mục tiêu dài hạn của tổ chức. Những tiêu chí này đưa ra cái nhìn toàn diện hơn và đưa ra quyết định tốt hơn về công cụ data ingestion phù hợp nhất cho tổ chức của mình.
+### Cân nhắc:  Apache NiFi, Kafka, Talend, Hadood và Confluent
