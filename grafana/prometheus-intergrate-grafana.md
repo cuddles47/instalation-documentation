@@ -10,7 +10,7 @@
 
 
 ## Cấu hình máy chủ
-================
+
 
 Phần mềm được cài đặt trên máy chủ có:
 
@@ -24,7 +24,6 @@ Phần mềm được cài đặt trên máy chủ có:
 
 -   Cho phép truy cập SSH từ xa.
 
-================
 # Bước 1 : Add data source
 Để trực quan hóa số liệu, trước tiên bạn cần thêm nguồn dữ liệu. Nhấp Add data source và chọn Prometheus. Đối với URL, hãy nhập <http://localhost:9090>  và nhấp vào Save and test. Bạn có thể thấy Data source is working
 
