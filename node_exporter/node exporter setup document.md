@@ -41,13 +41,7 @@ Phần mềm được cài đặt trên máy chủ có:
 
 ```sh
 
-sudo useradd
-
-     --system
-
-    --no-create-home
-
-    --shell /bin/false node_exporter
+sudo useradd  --system  --no-create-home  --shell /bin/false node_exporter
 
 ```
 
@@ -72,11 +66,7 @@ tar -xvf node_exporter-1.3.1.linux-amd64.tar.gz
 
 ```sh
 
-sudo mv
-
-  node_exporter-1.3.1.linux-amd64/node_exporter
-
-  /usr/local/bin/
+sudo mv node_exporter-1.3.1.linux-amd64/node_exporter /usr/local/bin/
 
 ```
 
