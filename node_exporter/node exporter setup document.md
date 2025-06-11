@@ -78,7 +78,7 @@ sudo mv
 
   /usr/local/bin/
 
-  ```
+```
 
 ## step 5 : Clean up, delete node_exporter archive and a folder
 
