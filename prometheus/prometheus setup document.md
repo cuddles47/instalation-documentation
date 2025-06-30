@@ -36,17 +36,14 @@ Việc có người dùng riêng cho từng dịch vụ phục vụ hai mục đ
 - đơn giản hóa việc quản lý và cấp quyền\
 chạy lệnh sau để tạo người dùng hệ thống :
 ```sh
-sudo useradd \
--- system \
--- no-create-home \
--- shell /bin/false prometheus
+sudo useradd -- system -- no-create-home -- shell /bin/false prometheus
 ```
 ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXcYs5A4TRpH7fUv-aRH7YNJRKjTEWvlXaDEskcfoPUVLj3jrzF_Ca8JENE1bAAorKPl5INsVzOevvnfNZYdklcVIM3qPk9jdrkp8VdH3gx_02Gh-Dlktjcg91I9UAB9BblqlIxmqungBJdG54B9iLF-lNdK?key=GNGwM7x8FcjuZoSehwKGXg)
 
 ## Bước 2 : Tải xuống prometheus bằng curl hoặc wget
 
 ```sh
-wget [https://github.com/prometheus/prometheus/releases/download/v2.32.1/prometheus-2.32.1.linux-amd64.tar.gz](https://github.com/prometheus/prometheus/releases/download/v2.32.1/prometheus-2.32.1.linux-amd64.tar.gz)
+wget https://github.com/prometheus/prometheus/releases/download/v2.32.1/prometheus-2.32.1.linux-amd64.tar.gz
 ```
 chọn phiên bản [tại đây](https://prometheus.io/download/)![](https://lh7-us.googleusercontent.com/docsz/AD_4nXcY-rqYr_99aXEmyxpsRG6pO_IrrPwc0k-bMR2iq4vGxplTAdXdbcLdhfyn7uPuzGXgtIsJatTOSxmmRxD_0VH3dXo7e6MB3-KbQoIL6ChKXSG2Pi8KL2d_WOc7lBKemJHpvhk7ILbKMy38N7m_u8yp7JMt?key=GNGwM7x8FcjuZoSehwKGXg)
 
