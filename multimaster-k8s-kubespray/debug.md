@@ -97,13 +97,3 @@ kubeadm reset
 | metrics-server   | Đo tài nguyên | Hữu ích cho `kubectl top`                |
 | Helm             | Quản lý addon | Cực kỳ tiện dụng                         |
 | Lens Metrics     | GUI tiện lợi  | Dễ dùng nhưng hay lỗi, nên biết cách xoá |
-
----
-
-## ✅ Kết luận
-
-Việc dựng cụm Kubernetes bằng `kubeadm` cần sự cẩn thận về quyền, mạng, và addon. Lens là công cụ GUI mạnh nhưng có thể gây lỗi nếu thao tác chưa đúng. Tài liệu này giúp bạn chủ động hơn khi gặp sự cố.
-
----
-
-Nếu bạn muốn mình đóng gói tài liệu này thành file `.md` (Markdown) hoặc `.pdf`, mình có thể tạo giúp. Bạn cũng có thể bổ sung mục `Câu hỏi thường gặp` nếu muốn.
