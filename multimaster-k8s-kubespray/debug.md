@@ -1,7 +1,3 @@
-Dưới đây là một **tài liệu hoàn chỉnh** tóm tắt lại **các lỗi đã gặp**, **nguyên nhân**, và **cách khắc phục** trong quá trình bạn tạo và cấu hình cụm Kubernetes bằng `kubeadm`. Tài liệu này được trình bày theo từng bước, có thể dùng để chia sẻ lại hoặc ghi chú nội bộ.
-
----
-
 # 📘 Tài liệu tổng hợp lỗi và cách xử lý khi tạo cụm Kubernetes bằng `kubeadm`
 
 ## 📌 Môi trường sử dụng
