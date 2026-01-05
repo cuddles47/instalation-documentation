@@ -1,7 +1,8 @@
 #!/bin/bash
 set -e
 
-EXPORTER_VERSION="0.17.0"
+# link check ver mới https://github.com/prometheus-community/postgres_exporter/releases
+EXPORTER_VERSION="0.18.1"
 EXPORTER_USER="postgres_exporter"
 EXPORTER_DIR="/opt/postgres_exporter"
 EXPORTER_BIN="/usr/local/bin/postgres_exporter"
@@ -28,7 +29,7 @@ fi
 
 sudo chown $EXPORTER_USER:$EXPORTER_USER $EXPORTER_BIN
 
-echo "==> 4. Tạo file env"
+echo "==> 4. Tạo file env, nhớ sửa lại info"
 sudo bash -c "cat > $ENV_FILE" <<EOF
 export DATA_SOURCE_NAME="postgresql://user:password@localhost:5432/postgres?sslmode=disable"
 EOF
