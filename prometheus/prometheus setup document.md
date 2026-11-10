@@ -55,6 +55,8 @@ chọn phiên bản [tại đây](https://prometheus.io/download/)![](https://lh
 ```sh
 tar -xvf prometheus-2.32.1.linux-amd64.tar.gz
 sudo mkdir -p /data /etc/prometheus
+sudo chown -R prometheus:prometheus /data
+sudo chown -R prometheus:prometheus /etc/prometheus
 cd prometheus-2.32.1.linux-amd64
 sudo mv prometheus promtool /usr/local/bin/
 sudo mv prometheus.yml /etc/prometheus/prometheus.yml
