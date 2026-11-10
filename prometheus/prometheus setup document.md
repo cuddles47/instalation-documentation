@@ -36,7 +36,11 @@ Việc có người dùng riêng cho từng dịch vụ phục vụ hai mục đ
 - đơn giản hóa việc quản lý và cấp quyền\
 chạy lệnh sau để tạo người dùng hệ thống :
 ```sh
-sudo useradd -- system -- no-create-home -- shell /bin/false prometheus
+sudo useradd --system \
+  --no-create-home \
+  --user-group \
+  --shell /usr/sbin/nologin \
+  prometheus
 ```
 ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXcYs5A4TRpH7fUv-aRH7YNJRKjTEWvlXaDEskcfoPUVLj3jrzF_Ca8JENE1bAAorKPl5INsVzOevvnfNZYdklcVIM3qPk9jdrkp8VdH3gx_02Gh-Dlktjcg91I9UAB9BblqlIxmqungBJdG54B9iLF-lNdK?key=GNGwM7x8FcjuZoSehwKGXg)
 
